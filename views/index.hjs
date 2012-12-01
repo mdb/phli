@@ -15,26 +15,36 @@
         <h4 class="twelve columns subheader">Download Philadelphia Licenses &amp; Inspections Data</h4>
       </div>
     </header>
-    <div class="controls row">
-      <form class="twelve columns">
-        <label>Council District</label>
-        <input type="text" placeholder="Standard Input" />
-        <label>Address</label>
-        <input type="text" class="twelve" placeholder="Street" />
+    <hr class="row">
+    <div class="row">
+      <h3 class="twelve columns">Filter Options</h3>
+    </div>
+    <div class="controls row display">
+      <form class="twelve columns custom">
         <div class="row">
-          <div class="six columns">
-            <input type="text" placeholder="City" />
-          </div>
-          <div class="three columns">
-            <input type="text" placeholder="State" />
-          </div>
-          <div class="three columns">
-            <input type="text" placeholder="ZIP" />
+          <div class="twelve columns">
+            <strong>Council District: </strong>
+            <label for="cd1"><input type="checkbox" id="cd1" style="display: none;"><span class="custom checkbox"></span> 1</label>
+            <label for="cd2"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 2</label>
+            <label for="cd3"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 3</label>
+            <label for="cd4"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 4</label>
+            <label for="cd5"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 5</label>
+            <label for="cd6"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 6</label>
+            <label for="cd7"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 7</label>
+            <label for="cd8"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 8</label>
+            <label for="cd9"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 9</label>
+            <label for="cd10"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 10</label>
           </div>
         </div>
       </form>
     </div>
-    <div class="row">
+    <div class="row display">
+      <div class="three columns offset-by-nine">
+        <a class="button twelve" href="#">Search</a>
+      </div>
+    </div>
+
+    <div class="row display">
       <h3 class="nine columns">Preview</h3>
       <div class="three columns">
         <a class="button twelve" href="#">Download CSV</a>

@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+label {
+  display: inline;
+}
+
+.display {
+  margin-bottom: 10px;
+}
