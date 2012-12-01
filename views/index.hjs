@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ title }}</title>
+    <title>Philadelphia L&amp;I Data Downloader</title>
+    <link rel='stylesheet' href='/stylesheets/foundation.min.css' />
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/modernizr.foundation.js"></script>
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <p>Welcome to {{ title }}</p>
+    <header>
+      <h1>PHLI</h1>
+      <h4 class="subheader">Download Philadelphia Licenses &amp; Inspections Data</h4>
+    </header>
+    <div class="controls row">
+      <form>
+        <label>Council District</label>
+        <input type="text" placeholder="Standard Input" />
+        <label>Address</label>
+        <input type="text" class="twelve" placeholder="Street" />
+        <div class="row">
+          <div class="six columns">
+            <input type="text" placeholder="City" />
+          </div>
+          <div class="three columns">
+            <input type="text" placeholder="State" />
+          </div>
+          <div class="three columns">
+            <input type="text" placeholder="ZIP" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="row">
+      <h3 class="nine columns">Preview</h3>
+      <a class="button three columns" href="#">Download CSV</a>
+    </div>
+    <div class="row">
+      <table class="twelve">
+        <thead>
+          <tr>
+            <th>Table Header</th>
+            <th>Table Header</th>
+            <th>Table Header</th>
+            <th>Table Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content</td>
+            <td>This is longer content</td>
+            <td>Content</td>
+            <td>Content</td>
+          </tr>
+          <tr>
+            <td>Content</td>
+            <td>This is longer content</td>
+            <td>Content</td>
+            <td>Content</td>
+          </tr>
+          <tr>
+            <td>Content</td>
+            <td>This is longer content</td>
+            <td>Content</td>
+            <td>Content</td>
+          </tr>
+          <tr>
+            <td>Content</td>
+            <td>This is longer content</td>
+            <td>Content</td>
+            <td>Content</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>
+      <p>PHLI is a prototype, built at RHOK Philadelphia, to expose the API provided by Philadelphia Licenses &amp; Inspections.</p>
+    </footer>
+    <script src="/javascripts/foundation.min.js"></script>
   </body>
 </html>
