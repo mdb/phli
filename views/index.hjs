@@ -8,11 +8,15 @@
   </head>
   <body>
     <header>
-      <h1>PHLI</h1>
-      <h4 class="subheader">Download Philadelphia Licenses &amp; Inspections Data</h4>
+      <div class="row">
+        <h1 class="twelve columns">PHLI</h1>
+      </div>
+      <div class="row">
+        <h4 class="twelve columns subheader">Download Philadelphia Licenses &amp; Inspections Data</h4>
+      </div>
     </header>
     <div class="controls row">
-      <form>
+      <form class="twelve columns">
         <label>Council District</label>
         <input type="text" placeholder="Standard Input" />
         <label>Address</label>
@@ -32,48 +36,52 @@
     </div>
     <div class="row">
       <h3 class="nine columns">Preview</h3>
-      <a class="button three columns" href="#">Download CSV</a>
+      <div class="three columns">
+        <a class="button twelve" href="#">Download CSV</a>
+      </div>
     </div>
     <div class="row">
-      <table class="twelve">
-        <thead>
-          <tr>
-            <th>Table Header</th>
-            <th>Table Header</th>
-            <th>Table Header</th>
-            <th>Table Header</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Content</td>
-            <td>This is longer content</td>
-            <td>Content</td>
-            <td>Content</td>
-          </tr>
-          <tr>
-            <td>Content</td>
-            <td>This is longer content</td>
-            <td>Content</td>
-            <td>Content</td>
-          </tr>
-          <tr>
-            <td>Content</td>
-            <td>This is longer content</td>
-            <td>Content</td>
-            <td>Content</td>
-          </tr>
-          <tr>
-            <td>Content</td>
-            <td>This is longer content</td>
-            <td>Content</td>
-            <td>Content</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="twelve columns">
+        <table class="twelve">
+          <thead>
+            <tr>
+              <th>Table Header</th>
+              <th>Table Header</th>
+              <th>Table Header</th>
+              <th>Table Header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content</td>
+              <td>This is longer content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td>This is longer content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td>This is longer content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td>This is longer content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <footer>
-      <p>PHLI is a prototype, built at RHOK Philadelphia, to expose the API provided by Philadelphia Licenses &amp; Inspections.</p>
+    <footer class="row">
+      <p class="twelve columns">PHLI is a prototype, built at RHOK Philadelphia, to expose the API provided by Philadelphia Licenses &amp; Inspections.</p>
     </footer>
     <script src="/javascripts/foundation.min.js"></script>
   </body>
