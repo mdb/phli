@@ -1,5 +1,5 @@
 {
-  "name": "phli",
+  "name": "phli-app",
   "description": "Bulk downloads of Philly L&I data",
   "version": "0.0.1",
   "engines": {
@@ -8,10 +8,12 @@
   },
   "dependencies": {
     "express": "~3.0.3",
-    "hjs": "0.0.4"
+    "hjs": "0.0.4",
+    "phli": "0.0.1"
   },
   "bundleDependencies": [
     "express",
-    "hjs"
+    "hjs",
+    "phli"
   ]
 }
