@@ -43,11 +43,11 @@
         <a class="button twelve" href="#">Search</a>
       </div>
     </div>
-
+    <hr class="row">
     <div class="row display">
       <h3 class="nine columns">Preview</h3>
       <div class="three columns">
-        <a class="button twelve" href="#">Download CSV</a>
+        <a class="download button twelve" href="#">Download CSV</a>
       </div>
     </div>
     <div class="row">
