@@ -3,6 +3,14 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
+h4.subheader {
+  margin-top: 0;
+}
+
 a {
   color: #00B7FF;
 }
@@ -13,4 +21,8 @@ label {
 
 .display {
   margin-bottom: 10px;
+}
+
+.download {
+  margin-top: 10px;
 }

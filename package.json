@@ -1,13 +1,19 @@
 {
-  "name": "phli",
+  "name": "phli-app",
   "description": "Bulk downloads of Philly L&I data",
   "version": "0.0.1",
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
   "dependencies": {
     "express": "~3.0.3",
-    "hjs": "0.0.4"
+    "hjs": "0.0.4",
+    "phli": "0.0.3"
   },
   "bundleDependencies": [
     "express",
-    "hjs"
+    "hjs",
+    "phli"
   ]
 }
