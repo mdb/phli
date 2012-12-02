@@ -15,7 +15,7 @@
         </h1>
       </div>
     </header>
-    <section class="form">
+    <section class="form" id="form-view">
       <div class="controls row display">
         <h3 class="twelve columns">Filter Options</h3>
         <form class="twelve columns">
@@ -101,5 +101,8 @@
       </div>
     </footer>
     <script src="/javascripts/foundation.min.js"></script>
+    <script src="/javascripts/underscore.min.js"></script>
+    <script src="/javascripts/backbone.min.js"></script>
+    <script src="/javascripts/site.js"></script>
   </body>
 </html>
