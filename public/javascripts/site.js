@@ -32,7 +32,9 @@ $(document).ready(function(){
 
 if (window.location.search) {
   $('.loading').show();
-  $('.download').attr('href', '/api'+window.location.search);
+  $('.download').attr('href', '/api'+window.location.search).on('click', function () {
+    $(this).text('Downloading CSV...').addClass('secondary');
+  });
 
   $.getJSON('/api'+window.location.search+'&preview=1', null, function(data) {
     console.log(data)

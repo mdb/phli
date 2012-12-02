@@ -20,9 +20,13 @@ exports.api = function(req, res){
 
   var options = {};
 
-  //if (req.query.preview) options.top = 5;
-  options.top = 5
-  options.zip = req.query.zip
+  if (req.query.preview) options.top = 5;
+  //options.top = 5
+  var ap, approvedParams = ['zip', 'census_tract', 'ward', 'council_district'];
+  for (var i=0; i<approvedParams.length; i++) {
+    ap = approvedParams[i];
+    if (req.query[ap]) options[ap] = req.query[ap];
+  }
 
   phli.getType(req.query.type, options, function (err, data) {
     if (err) {
@@ -43,7 +47,6 @@ exports.api = function(req, res){
     }
 
     var date = new Date();
-
     res.writeHead(200, {
       'Content-Disposition': 'attachment; filename="phli_' + date.toISOString() + '.csv"',
       'Content-Type': 'text/csv'

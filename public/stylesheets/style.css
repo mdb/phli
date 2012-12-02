@@ -9,6 +9,10 @@ header {
   padding: 5px 0;
 }
 
+header a, header a:hover {
+  color: #fff;
+}
+
 section.form {
   background: #ECF8FF;
   padding: 15px 0;
