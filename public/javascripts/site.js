@@ -32,20 +32,12 @@ $(document).ready(function(){
 
 if (window.location.search) {
   $('.loading').show();
+  $('.download').attr('href', '/api'+window.location.search);
 
   $.getJSON('/api'+window.location.search+'&preview=1', null, function(data) {
     console.log(data)
     var i, j, header, item, itemRow, value;
     $('.count').text(data.d.__count + ' results');
-
-    // TODO API should provide data.headings and data.items
-    //data.headings = ['id', 'work_description', 'permit_type_code', 'permit_type_name'];
-    //data.items = [
-    //  ['123', 'ROUGHIN FOR NEW KITCHEN,BATH,HALF', 'EZPLUM', 'PLU-EZ PLUMBING'],
-    //  ['456', 'MOAR ROUGHIN FOR NEW KITCHEN,BATH,HALF', 'EZPLUM', 'PLU-EZ PLUMBING'],
-    //  ['239', 'ROUGHIN FOR NEW PONY', 'EZPZ', 'PLUS-EZ PLUMBING'],
-    //  ['2394', 'SUPER ROUGHIN FOR NEW HALF', 'EZPIE', 'PLU-EZ APLOMBING']
-    //];
 
     for (i=0; i<data.headings.length; i++) {
       header = data.headings[i];
