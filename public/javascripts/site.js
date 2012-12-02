@@ -64,5 +64,6 @@ if (window.location.search) {
 
     $('.loading').hide();
     $('.preview').show();
+    $('body').removeClass('no-preview');
   });
 }

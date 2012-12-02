@@ -30,8 +30,10 @@ footer {
   background: #3F3F3F;  
   color: #fff;
   width: 100%;
-  bottom: 0;
-  position: absolute;
+}
+
+body.no-preview footer {
+  margin-top: 200px;  
 }
 
 h1 {

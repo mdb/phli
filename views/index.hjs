@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="/javascripts/modernizr.foundation.js"></script>
   </head>
-  <body>
+  <body class="no-preview">
     <header>
       <div class="row">
         <h1 class="twelve columns">
