@@ -100,10 +100,11 @@
     <footer>
       <div class="row">
         <div class="twelve columns">
-          <p>PHLI uses the City of Philadelphia's Licenses &amp; Inspections API.</p>
+          <p>PHLI uses <a href="http://github.com/mdb/node-phli">node-phli</a>, a Node.js wrapper for the City of Philadelphia's Licenses &amp; Inspections API.</p>
           <p>It is a prototype built during the December 2012 <a href="http://rhok.org">Random Hacks of Kindness</a> Philadelphia Hackathon.</p>
           <p>PHLI's source code is available on <a href="http://github.com/mdb/phli">Github</a>.</p>
-          <p>It was built by <a href="http://mikeball.us">Mike Ball</a>, <a href="http://cpt.ph">Casey Thomas</a>, <a href="http://twitter.com/gsf747">Gabriel Farrell</a>, <a href="https://twitter.com/timwis">Tim Wisniewski</a>, and Stacey Mosley.</p>
+          <p>It was built by <a href="http://mikeball.us">Mike Ball</a>, <a href="http://www.twitter.com/caseypt">Casey Thomas</a>, <a href="http://twitter.com/gsf747">Gabriel Farrell</a>, <a href="https://twitter.com/timwis">Tim Wisniewski</a>, and Stacey Mosley.
+          <p>It is not affiliated with the City of Philadelphia.</p>
         </div>
       </div>
     </footer>
