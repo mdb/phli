@@ -57,8 +57,22 @@ a {
   color: #00B7FF;
 }
 
+form strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
 label {
   display: inline;
+}
+
+select {
+  height: 200px;  
+  font-size: 12px;  
+  border: 1px solid #ddd;
+}
+
+option {
 }
 
 #types {
