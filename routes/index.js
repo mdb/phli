@@ -25,16 +25,18 @@ exports.api = function(req, res){
   options.zip = req.query.zip
 
   phli.getType(req.query.type, options, function (err, data) {
-    var csvHeadings;
-
     if (err) {
       res.writeHead(400)
       return res.end()
     }
 
-    csvHeadings = buildHeadingsList(data.d.results[0]);
+    data.headings = flatten(data.d.results[0], true);
 
     if (req.query.preview) {  // just send our bit of JSON
+      // passing flatten as the map function runs into problems with params
+      data.items = data.d.results.map(function(item) {
+        return flatten(item);  
+      });
       res.writeHead(200, {'Content-Type': 'application/json'});
       res.write(JSON.stringify(data));
       return res.end();
@@ -44,52 +46,42 @@ exports.api = function(req, res){
       'Content-Disposition': 'attachment; filename="test.csv"',
       'Content-Type': 'text/csv'
     });
-    buildCSV(res, csvHeadings, data)
+    buildCSV(res, data.headings, data)
     res.end()
   });
 };
-
-function buildHeadingsList(item) {
-  var headings = [];
-  var key;
-  var locKey;
-  var locValue;
-  var value;
-
-  headings = flatten(item, true);
-
-  return headings;
-}
 
 function buildCSV(res, headings, data) {
   var results = data.d.results;
   var row;
   
   res.write('"' + headings.join('","') + '"\n');
-  results.forEach(function(result) {
-    row = flatten(result);
+  results.forEach(function(item) {
+    row = flatten(item);
     res.write('"' + row.join('","') + '"\n');
   });
 }
 
-function flatten(result, useKeys) {
+function flatten (item, useKeys) {
   var key;
   var locKey;
   var locValue;
   var value;
   var row = [];
  
-  for (key in result) {
-    value = result[key];
+  for (key in item) {
+    value = item[key];
+    //console.log(key, value);
+
     if (key === 'locations') {
-      for (locKey in key) {
+      for (locKey in value) {
         locValue = value[locKey];
-        if (typeof locValue === 'object') continue;
+        if (typeof locValue === 'object' && locValue !== null) continue;
         row.push(useKeys ? locKey : locValue);
       }
-      continue;
     }
-    if (typeof value === "object") continue;
+
+    if (typeof value === 'object' && value !== null) continue;
     row.push(useKeys ? key : value);
   }
 
