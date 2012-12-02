@@ -578,8 +578,13 @@
               </select>
             </div>
           </div>
+          <div class="row spacer" style="margin: 10px 0;">
+            <div class="twelve columns"></div>
+          </div>
           <div class="row">
-            <div class="nine columns">
+            <div class="four columns">
+            </div>
+            <div class="five columns" id="types">
               <label for="permits"><input type="radio" id="permits" name="liType" value="permits"> Permits</label>
               <label for="licenses"><input type="radio" id="licenses" name="liType" value="licenses"> Licenses</label>
               <label for="cases"><input type="radio" id="cases" name="liType" value="cases"> Cases</label>

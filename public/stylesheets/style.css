@@ -53,3 +53,12 @@ label {
 .download {
   margin-top: 10px;
 }
+
+#types {
+  padding-top: 14px;
+}
+
+#types label {
+  padding: 0 10px;
+  font-size: 18px;
+}
