@@ -42,8 +42,10 @@ exports.api = function(req, res){
       return res.end();
     }
 
+    var date = new Date();
+
     res.writeHead(200, {
-      'Content-Disposition': 'attachment; filename="test.csv"',
+      'Content-Disposition': 'attachment; filename="phli_' + date.toISOString() + '.csv"',
       'Content-Type': 'text/csv'
     });
     buildCSV(res, data.headings, data)
