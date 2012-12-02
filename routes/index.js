@@ -1,3 +1,4 @@
+var phli = require('phli')()
 
 /*
  * GET home page.
@@ -12,10 +13,16 @@ exports.index = function(req, res){
  */
 
 exports.csv = function(req, res){
-  res.writeHead(200, {
-    'Content-Disposition': 'attachment; filename="test.csv"',
-    'Content-Type': 'text/csv'
+  phli.getPermits({zip: '19143', top: 5}, function (err, data) {
+    if (err) {
+      res.writeHead(500)
+      return res.end()
+    }
+    res.writeHead(200, {
+      'Content-Disposition': 'attachment; filename="test.csv"',
+      'Content-Type': 'text/csv'
+    })
+    res.write(JSON.stringify(data))
+    res.end()
   })
-  res.write('Thing1,Thing2,Thing3\na,b,c\nd,e,f')
-  res.end()
 };

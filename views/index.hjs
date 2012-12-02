@@ -20,28 +20,33 @@
       <h3 class="twelve columns">Filter Options</h3>
     </div>
     <div class="controls row display">
-      <form class="twelve columns custom">
+      <form class="twelve columns">
         <div class="row">
           <div class="twelve columns">
-            <strong>Council District: </strong>
-            <label for="cd1"><input type="checkbox" id="cd1" style="display: none;"><span class="custom checkbox"></span> 1</label>
-            <label for="cd2"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 2</label>
-            <label for="cd3"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 3</label>
-            <label for="cd4"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 4</label>
-            <label for="cd5"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 5</label>
-            <label for="cd6"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 6</label>
-            <label for="cd7"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 7</label>
-            <label for="cd8"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 8</label>
-            <label for="cd9"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 9</label>
-            <label for="cd10"><input type="checkbox" id="cd2" style="display: none;"><span class="custom checkbox"></span> 10</label>
+            <strong>Council Districts: </strong>
+            <label for="cd1"><input type="checkbox" id="cd1" name="cd1" checked> 1</label>
+            <label for="cd2"><input type="checkbox" id="cd2" name="cd2" checked> 2</label>
+            <label for="cd3"><input type="checkbox" id="cd3" name="cd3" checked> 3</label>
+            <label for="cd4"><input type="checkbox" id="cd4" name="cd4" checked> 4</label>
+            <label for="cd5"><input type="checkbox" id="cd5" name="cd5" checked> 5</label>
+            <label for="cd6"><input type="checkbox" id="cd6" name="cd6" checked> 6</label>
+            <label for="cd7"><input type="checkbox" id="cd7" name="cd7" checked> 7</label>
+            <label for="cd8"><input type="checkbox" id="cd8" name="cd8" checked> 8</label>
+            <label for="cd9"><input type="checkbox" id="cd9" name="cd9" checked> 9</label>
+            <label for="cd10"><input type="checkbox" id="cd10" name="cd10" checked> 10</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="nine columns">
+            <label for="permits"><input type="radio" id="permits" name="liType" value="permits"> Permits</label>
+            <label for="licenses"><input type="radio" id="licenses" name="liType" value="licenses"> Licenses</label>
+            <label for="cases"><input type="radio" id="cases" name="liType" value="cases"> Cases</label>
+          </div>
+          <div class="three columns">
+            <a class="button twelve" href="#">Search</a>
           </div>
         </div>
       </form>
-    </div>
-    <div class="row display">
-      <div class="three columns offset-by-nine">
-        <a class="button twelve" href="#">Search</a>
-      </div>
     </div>
     <hr class="row">
     <div class="row display">
