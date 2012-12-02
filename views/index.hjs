@@ -99,10 +99,12 @@
     </section>
     <footer>
       <div class="row">
-        <p>PHLI uses the City of Philadelphia's Licenses &amp; Inspections API.</p>
-        <p>It is a prototype built during the December 2012 <a href="http://rhok.org">Random Hacks of Kindness</a> Philadelphia Hackathon.</p>
-        <p>PHLI's source code is available on <a href="http://github.com/mdb/phli">Github</a>.</p>
-        <p>It was built by <a href="http://mikeball.us">Mike Ball</a>, <a href="http://cpt.ph">Casey Thomas</a>, <a href="http://twitter.com/gsf747">Gabriel Farrell</a>, <a href="https://twitter.com/timwis">Tim Wicinski</a>, and Stacey Mosley.</p>
+        <div class="twelve columns">
+          <p>PHLI uses the City of Philadelphia's Licenses &amp; Inspections API.</p>
+          <p>It is a prototype built during the December 2012 <a href="http://rhok.org">Random Hacks of Kindness</a> Philadelphia Hackathon.</p>
+          <p>PHLI's source code is available on <a href="http://github.com/mdb/phli">Github</a>.</p>
+          <p>It was built by <a href="http://mikeball.us">Mike Ball</a>, <a href="http://cpt.ph">Casey Thomas</a>, <a href="http://twitter.com/gsf747">Gabriel Farrell</a>, <a href="https://twitter.com/timwis">Tim Wisniewski</a>, and Stacey Mosley.</p>
+        </div>
       </div>
     </footer>
     <script src="/javascripts/foundation.min.js"></script>
