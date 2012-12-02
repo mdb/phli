@@ -20,18 +20,20 @@
         <h3 class="twelve columns">Filter Options</h3>
         <form class="twelve columns">
           <div class="row">
-            <div class="twelve columns">
+            <div class="two columns">
               <strong>Council Districts: </strong>
-              <label for="cd1"><input type="checkbox" id="cd1" name="cd1" checked> 1</label>
-              <label for="cd2"><input type="checkbox" id="cd2" name="cd2" checked> 2</label>
-              <label for="cd3"><input type="checkbox" id="cd3" name="cd3" checked> 3</label>
-              <label for="cd4"><input type="checkbox" id="cd4" name="cd4" checked> 4</label>
-              <label for="cd5"><input type="checkbox" id="cd5" name="cd5" checked> 5</label>
-              <label for="cd6"><input type="checkbox" id="cd6" name="cd6" checked> 6</label>
-              <label for="cd7"><input type="checkbox" id="cd7" name="cd7" checked> 7</label>
-              <label for="cd8"><input type="checkbox" id="cd8" name="cd8" checked> 8</label>
-              <label for="cd9"><input type="checkbox" id="cd9" name="cd9" checked> 9</label>
-              <label for="cd10"><input type="checkbox" id="cd10" name="cd10" checked> 10</label>
+              <select name="council_district" multiple="multiple">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
             </div>
           </div>
           <div class="row">
@@ -103,6 +105,7 @@
     <script src="/javascripts/foundation.min.js"></script>
     <script src="/javascripts/underscore.min.js"></script>
     <script src="/javascripts/backbone.min.js"></script>
+    <script src="/javascripts/backbone.syphon.min.js"></script>
     <script src="/javascripts/site.js"></script>
   </body>
 </html>
