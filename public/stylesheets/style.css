@@ -1,14 +1,43 @@
-body {
-  padding: 50px;
+html, body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100%;
+  display: block;
+}
+
+header {
+  background: #2BA6CB;  
+  padding: 5px 0;
+}
+
+section.form {
+  background: #ECF8FF;
+  padding: 15px 0;
+}
+
+section.preview {
+  padding-bottom: 20px;  
+}
+
+footer {
+  padding: 15px;
+  overflow: hidden;
+  display: block;
+  background: #3F3F3F;  
+  color: #fff;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 
 h1 {
   margin-bottom: 0;
+  color: #fff;
 }
 
-h4.subheader {
-  margin-top: 0;
+span.subheader {
+  display: block;
+  font-size: 24px;
+  color: #fff;
 }
 
 a {

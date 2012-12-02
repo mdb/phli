@@ -9,94 +9,96 @@
   <body>
     <header>
       <div class="row">
-        <h1 class="twelve columns">PHLI</h1>
-      </div>
-      <div class="row">
-        <h4 class="twelve columns subheader">Download Philadelphia Licenses &amp; Inspections Data</h4>
+        <h1 class="twelve columns">
+          PHLI
+          <span class="subheader">Download Philadelphia Licenses &amp; Inspections Data</span>
+        </h1>
       </div>
     </header>
-    <hr class="row">
-    <div class="row">
-      <h3 class="twelve columns">Filter Options</h3>
-    </div>
-    <div class="controls row display">
-      <form class="twelve columns">
-        <div class="row">
-          <div class="twelve columns">
-            <strong>Council Districts: </strong>
-            <label for="cd1"><input type="checkbox" id="cd1" name="cd1" checked> 1</label>
-            <label for="cd2"><input type="checkbox" id="cd2" name="cd2" checked> 2</label>
-            <label for="cd3"><input type="checkbox" id="cd3" name="cd3" checked> 3</label>
-            <label for="cd4"><input type="checkbox" id="cd4" name="cd4" checked> 4</label>
-            <label for="cd5"><input type="checkbox" id="cd5" name="cd5" checked> 5</label>
-            <label for="cd6"><input type="checkbox" id="cd6" name="cd6" checked> 6</label>
-            <label for="cd7"><input type="checkbox" id="cd7" name="cd7" checked> 7</label>
-            <label for="cd8"><input type="checkbox" id="cd8" name="cd8" checked> 8</label>
-            <label for="cd9"><input type="checkbox" id="cd9" name="cd9" checked> 9</label>
-            <label for="cd10"><input type="checkbox" id="cd10" name="cd10" checked> 10</label>
+    <section class="form">
+      <div class="controls row display">
+        <h3 class="twelve columns">Filter Options</h3>
+        <form class="twelve columns">
+          <div class="row">
+            <div class="twelve columns">
+              <strong>Council Districts: </strong>
+              <label for="cd1"><input type="checkbox" id="cd1" name="cd1" checked> 1</label>
+              <label for="cd2"><input type="checkbox" id="cd2" name="cd2" checked> 2</label>
+              <label for="cd3"><input type="checkbox" id="cd3" name="cd3" checked> 3</label>
+              <label for="cd4"><input type="checkbox" id="cd4" name="cd4" checked> 4</label>
+              <label for="cd5"><input type="checkbox" id="cd5" name="cd5" checked> 5</label>
+              <label for="cd6"><input type="checkbox" id="cd6" name="cd6" checked> 6</label>
+              <label for="cd7"><input type="checkbox" id="cd7" name="cd7" checked> 7</label>
+              <label for="cd8"><input type="checkbox" id="cd8" name="cd8" checked> 8</label>
+              <label for="cd9"><input type="checkbox" id="cd9" name="cd9" checked> 9</label>
+              <label for="cd10"><input type="checkbox" id="cd10" name="cd10" checked> 10</label>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="nine columns">
-            <label for="permits"><input type="radio" id="permits" name="liType" value="permits"> Permits</label>
-            <label for="licenses"><input type="radio" id="licenses" name="liType" value="licenses"> Licenses</label>
-            <label for="cases"><input type="radio" id="cases" name="liType" value="cases"> Cases</label>
+          <div class="row">
+            <div class="nine columns">
+              <label for="permits"><input type="radio" id="permits" name="liType" value="permits"> Permits</label>
+              <label for="licenses"><input type="radio" id="licenses" name="liType" value="licenses"> Licenses</label>
+              <label for="cases"><input type="radio" id="cases" name="liType" value="cases"> Cases</label>
+            </div>
+            <div class="three columns">
+              <a class="button twelve" href="#">Search</a>
+            </div>
           </div>
-          <div class="three columns">
-            <a class="button twelve" href="#">Search</a>
-          </div>
-        </div>
-      </form>
-    </div>
-    <hr class="row">
-    <div class="row display">
-      <h3 class="nine columns">Preview</h3>
-      <div class="three columns">
-        <a class="download button twelve" href="#">Download CSV</a>
+        </form>
       </div>
-    </div>
-    <div class="row">
-      <div class="twelve columns">
-        <table class="twelve">
-          <thead>
-            <tr>
-              <th>Table Header</th>
-              <th>Table Header</th>
-              <th>Table Header</th>
-              <th>Table Header</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Content</td>
-              <td>This is longer content</td>
-              <td>Content</td>
-              <td>Content</td>
-            </tr>
-            <tr>
-              <td>Content</td>
-              <td>This is longer content</td>
-              <td>Content</td>
-              <td>Content</td>
-            </tr>
-            <tr>
-              <td>Content</td>
-              <td>This is longer content</td>
-              <td>Content</td>
-              <td>Content</td>
-            </tr>
-            <tr>
-              <td>Content</td>
-              <td>This is longer content</td>
-              <td>Content</td>
-              <td>Content</td>
-            </tr>
-          </tbody>
-        </table>
+    </section>
+    <section class="preview">
+      <div class="row display">
+        <h3 class="nine columns">Preview</h3>
+        <div class="three columns">
+          <a class="download button twelve" href="#">Download CSV</a>
+        </div>
       </div>
-    </div>
-    <footer class="row">
-      <p class="twelve columns">PHLI is a prototype, built at RHOK Philadelphia, to expose the API provided by Philadelphia Licenses &amp; Inspections.</p>
+      <div class="row">
+        <div class="twelve columns">
+          <table class="twelve">
+            <thead>
+              <tr>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+                <th>Table Header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Content</td>
+                <td>This is longer content</td>
+                <td>Content</td>
+                <td>Content</td>
+              </tr>
+              <tr>
+                <td>Content</td>
+                <td>This is longer content</td>
+                <td>Content</td>
+                <td>Content</td>
+              </tr>
+              <tr>
+                <td>Content</td>
+                <td>This is longer content</td>
+                <td>Content</td>
+                <td>Content</td>
+              </tr>
+              <tr>
+                <td>Content</td>
+                <td>This is longer content</td>
+                <td>Content</td>
+                <td>Content</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <p>PHLI is a prototype, built at RHOK Philadelphia, to expose the API provided by Philadelphia Licenses &amp; Inspections.</p>
+      </div>
     </footer>
     <script src="/javascripts/foundation.min.js"></script>
   </body>
