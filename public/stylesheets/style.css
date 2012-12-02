@@ -14,8 +14,13 @@ section.form {
   padding: 15px 0;
 }
 
+section.loading {
+  display: none;
+}
+
 section.preview {
   padding-bottom: 20px;  
+  display: none;
 }
 
 footer {
@@ -44,14 +49,6 @@ a {
 
 label {
   display: inline;
-}
-
-.display {
-  margin-bottom: 10px;
-}
-
-.download {
-  margin-top: 10px;
 }
 
 #types {

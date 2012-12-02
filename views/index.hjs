@@ -596,51 +596,32 @@
         </form>
       </div>
     </section>
+    <section class="loading">
+      <div class="row">
+        <h3 class="twelve columns subheader">Loading...</h3>
+      </div>
+    </section>
     <section class="preview">
-      <div class="row display">
-        <h3 class="nine columns">Preview</h3>
-        <div class="three columns">
-          <a class="download button twelve" href="#">Download CSV</a>
-        </div>
+      <div class="row">
+        <h3 class="twelve columns">Preview</h3>
+      </div>
+      <div class="row">
+        <p class="count twelve columns"></p>
       </div>
       <div class="row">
         <div class="twelve columns">
           <table class="twelve">
             <thead>
-              <tr>
-                <th>Table Header</th>
-                <th>Table Header</th>
-                <th>Table Header</th>
-                <th>Table Header</th>
-              </tr>
+              <tr></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Content</td>
-                <td>This is longer content</td>
-                <td>Content</td>
-                <td>Content</td>
-              </tr>
-              <tr>
-                <td>Content</td>
-                <td>This is longer content</td>
-                <td>Content</td>
-                <td>Content</td>
-              </tr>
-              <tr>
-                <td>Content</td>
-                <td>This is longer content</td>
-                <td>Content</td>
-                <td>Content</td>
-              </tr>
-              <tr>
-                <td>Content</td>
-                <td>This is longer content</td>
-                <td>Content</td>
-                <td>Content</td>
-              </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="three columns offset-by-nine">
+          <a class="download button twelve" href="#">Download CSV</a>
         </div>
       </div>
     </section>
