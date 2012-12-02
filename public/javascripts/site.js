@@ -10,9 +10,9 @@ phli.FormView = Backbone.View.extend({
   search: function(event) {
     event.preventDefault();
 
-    var formData = this.$el.find('form').serialize();
+    var data = Backbone.Syphon.serialize(this);
 
-    window.console.log(formData);
+    window.console.log(data);
   }
 });
 
