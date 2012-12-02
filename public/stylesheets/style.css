@@ -30,6 +30,8 @@ footer {
   background: #3F3F3F;  
   color: #fff;
   width: 100%;
+  bottom: 0;
+  position: absolute;
 }
 
 h1 {
