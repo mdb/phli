@@ -37,7 +37,7 @@
             </div>
             <div class="three columns">
               <strong>Zipcodes </strong>
-              <select name="zipcodes" multiple="multiple">
+              <select name="zip" multiple="multiple">
                 <option value="19003">19003</option>
                 <option value="19004">19004</option>
                 <option value="19006">19006</option>
@@ -119,7 +119,7 @@
             </div>
             <div class="three columns">
               <strong>Wards</strong>
-              <select name="wards" multiple="multiple">
+              <select name="ward" multiple="multiple">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -585,12 +585,12 @@
             <div class="four columns">
             </div>
             <div class="five columns" id="types">
-              <label for="permits"><input type="radio" id="permits" name="liType" value="permits"> Permits</label>
-              <label for="licenses"><input type="radio" id="licenses" name="liType" value="licenses"> Licenses</label>
-              <label for="cases"><input type="radio" id="cases" name="liType" value="cases"> Cases</label>
+              <label for="permits"><input type="radio" id="permits" name="type" value="permits"> Permits</label>
+              <label for="licenses"><input type="radio" id="licenses" name="type" value="licenses"> Licenses</label>
+              <label for="cases"><input type="radio" id="cases" name="type" value="cases"> Cases</label>
             </div>
             <div class="three columns">
-              <a class="button twelve" href="#">Search</a>
+              <input class="button twelve" type="submit" value="Search"/>
             </div>
           </div>
         </form>
@@ -603,13 +603,16 @@
     </section>
     <section class="preview">
       <div class="row">
-        <h3 class="twelve columns">Preview</h3>
+        <h3 class="nine columns">Preview</h3>
+        <div class="three columns">
+          <a class="download button twelve" href="#">Download CSV</a>
+        </div>
       </div>
       <div class="row">
         <p class="count twelve columns"></p>
       </div>
       <div class="row">
-        <div class="twelve columns">
+        <div class="preview-table twelve columns">
           <table class="twelve">
             <thead>
               <tr></tr>
@@ -617,11 +620,6 @@
             <tbody>
             </tbody>
           </table>
-        </div>
-      </div>
-      <div class="row">
-        <div class="three columns offset-by-nine">
-          <a class="download button twelve" href="#">Download CSV</a>
         </div>
       </div>
     </section>

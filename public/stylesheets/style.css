@@ -32,6 +32,12 @@ footer {
   width: 100%;
 }
 
+.preview-table {
+  overflow-x: scroll;
+  border: 1px solid #ddd;
+  padding-top: 10px;
+}
+
 body.no-preview footer {
   margin-top: 200px;  
 }
@@ -62,4 +68,8 @@ label {
 #types label {
   padding: 0 10px;
   font-size: 18px;
+}
+
+.download {
+  margin-top: 15px;  
 }
